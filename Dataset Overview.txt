@@ -1,0 +1,115 @@
+Dataset Overview:
+Shape: (211224, 16)
+Columns: ['Account', 'Coin', 'Execution Price', 'Size Tokens', 'Size USD', 'Side', 'Timestamp IST', 'Start Position', 'Direction', 'Closed PnL', 'Transaction Hash', 'Order ID', 'Crossed', 'Fee', 'Trade ID', 'Timestamp']
+                                      Account  Coin  Execution Price  \
+0  0xae5eacaf9c6b9111fd53034a602c192a04e082ed  @107           7.9769   
+1  0xae5eacaf9c6b9111fd53034a602c192a04e082ed  @107           7.9800   
+2  0xae5eacaf9c6b9111fd53034a602c192a04e082ed  @107           7.9855   
+3  0xae5eacaf9c6b9111fd53034a602c192a04e082ed  @107           7.9874   
+4  0xae5eacaf9c6b9111fd53034a602c192a04e082ed  @107           7.9894   
+
+   Size Tokens  Size USD Side     Timestamp IST  Start Position Direction  \
+0       986.87   7872.16  BUY  02-12-2024 22:50        0.000000       Buy   
+1        16.00    127.68  BUY  02-12-2024 22:50      986.524596       Buy   
+2       144.09   1150.63  BUY  02-12-2024 22:50     1002.518996       Buy   
+3       142.98   1142.04  BUY  02-12-2024 22:50     1146.558564       Buy   
+4         8.73     69.75  BUY  02-12-2024 22:50     1289.488521       Buy   
+
+   Closed PnL                                   Transaction Hash     Order ID  \
+0         0.0  0xec09451986a1874e3a980418412fcd0201f500c95bac...  52017706630   
+1         0.0  0xec09451986a1874e3a980418412fcd0201f500c95bac...  52017706630   
+2         0.0  0xec09451986a1874e3a980418412fcd0201f500c95bac...  52017706630   
+3         0.0  0xec09451986a1874e3a980418412fcd0201f500c95bac...  52017706630   
+4         0.0  0xec09451986a1874e3a980418412fcd0201f500c95bac...  52017706630   
+
+   Crossed       Fee      Trade ID     Timestamp  
+0     True  0.345404  8.950000e+14  1.730000e+12  
+1     True  0.005600  4.430000e+14  1.730000e+12  
+2     True  0.050431  6.600000e+14  1.730000e+12  
+3     True  0.050043  1.080000e+15  1.730000e+12  
+4     True  0.003055  1.050000e+15  1.730000e+12  
+
+Missing Values:
+ Account             0
+Coin                0
+Execution Price     0
+Size Tokens         0
+Size USD            0
+Side                0
+Timestamp IST       0
+Start Position      0
+Direction           0
+Closed PnL          0
+Transaction Hash    0
+Order ID            0
+Crossed             0
+Fee                 0
+Trade ID            0
+Timestamp           0
+dtype: int64
+
+Summary Statistics:
+                                            Account    Coin  Execution Price  \
+count                                       211224  211224    211224.000000   
+unique                                          32     246              NaN   
+top     0xbee1707d6b44d4d52bfe19e41f8a828645437aab    HYPE              NaN   
+freq                                         40184   68005              NaN   
+mean                                           NaN     NaN     11414.723350   
+std                                            NaN     NaN     29447.654868   
+min                                            NaN     NaN         0.000005   
+25%                                            NaN     NaN         4.854700   
+50%                                            NaN     NaN        18.280000   
+75%                                            NaN     NaN       101.580000   
+max                                            NaN     NaN    109004.000000   
+
+         Size Tokens      Size USD    Side     Timestamp IST  Start Position  \
+count   2.112240e+05  2.112240e+05  211224            211224    2.112240e+05   
+unique           NaN           NaN       2             27977             NaN   
+top              NaN           NaN    SELL  14-02-2025 00:31             NaN   
+freq             NaN           NaN  108528               441             NaN   
+mean    4.623365e+03  5.639451e+03     NaN               NaN   -2.994625e+04   
+std     1.042729e+05  3.657514e+04     NaN               NaN    6.738074e+05   
+min     8.740000e-07  0.000000e+00     NaN               NaN   -1.433463e+07   
+25%     2.940000e+00  1.937900e+02     NaN               NaN   -3.762311e+02   
+50%     3.200000e+01  5.970450e+02     NaN               NaN    8.472793e+01   
+75%     1.879025e+02  2.058960e+03     NaN               NaN    9.337278e+03   
+max     1.582244e+07  3.921431e+06     NaN               NaN    3.050948e+07   
+
+        Direction     Closed PnL  \
+count      211224  211224.000000   
+unique         12            NaN   
+top     Open Long            NaN   
+freq        49895            NaN   
+mean          NaN      48.749001   
+std           NaN     919.164828   
+min           NaN -117990.104100   
+25%           NaN       0.000000   
+50%           NaN       0.000000   
+75%           NaN       5.792797   
+max           NaN  135329.090100   
+
+                                         Transaction Hash      Order ID  \
+count                                              211224  2.112240e+05   
+unique                                             101184           NaN   
+top     0x00000000000000000000000000000000000000000000...           NaN   
+freq                                                 9032           NaN   
+mean                                                  NaN  6.965388e+10   
+std                                                   NaN  1.835753e+10   
+min                                                   NaN  1.732711e+08   
+25%                                                   NaN  5.983853e+10   
+50%                                                   NaN  7.442939e+10   
+75%                                                   NaN  8.335543e+10   
+max                                                   NaN  9.014923e+10   
+
+       Crossed            Fee      Trade ID     Timestamp  
+count   211224  211224.000000  2.112240e+05  2.112240e+05  
+unique       2            NaN           NaN           NaN  
+top       True            NaN           NaN           NaN  
+freq    128403            NaN           NaN           NaN  
+mean       NaN       1.163967  5.628549e+14  1.737744e+12  
+std        NaN       6.758854  3.257565e+14  8.689920e+09  
+min        NaN      -1.175712  0.000000e+00  1.680000e+12  
+25%        NaN       0.016121  2.810000e+14  1.740000e+12  
+50%        NaN       0.089578  5.620000e+14  1.740000e+12  
+75%        NaN       0.393811  8.460000e+14  1.740000e+12  
+max        NaN     837.471593  1.130000e+15  1.750000e+12  
